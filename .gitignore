@@ -81,4 +81,8 @@ target/
 
 # IPython
 profile_default/
+<<<<<<< HEAD
 ipython_config.py
+=======
+ipython_config.py
+>>>>>>> origin/main
