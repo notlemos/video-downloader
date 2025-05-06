@@ -2,10 +2,11 @@ import customtkinter as ctk
 from PIL import Image
 import os
 from functions.yt import baixar_video
+from assets.fonts.installfont import install_font
 
 
 def setup_ui(frame, app):
-    
+    install_font()
     
 
     image = Image.open("src/assets/imgs/youtube.png")

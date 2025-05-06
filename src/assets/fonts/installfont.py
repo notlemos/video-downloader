@@ -1,15 +1,21 @@
+# install_fonts.py
 import os
 import shutil
 import platform
 
 def install_font():
-    font_path = os.path.join('assets', 'fonts', 'BebasNeue-Regular.ttf')
+    font_path = os.path.abspath(os.path.join('src', 'assets', 'fonts', 'BebasNeue-Regular.otf'))
+
+    
+
+
+
 
     if not os.path.exists(font_path):
-        print("Fonte não encontrada!")
+        print(f"Fonte não encontrada no caminho: {font_path}")
         return
 
-    # Determina o diretório de fontes dependendo do sistema operacional
+    
     if platform.system() == "Windows":
         fonts_dir = os.path.join(os.environ["WINDIR"], "Fonts")
     elif platform.system() == "Linux":
@@ -20,9 +26,9 @@ def install_font():
         print("Sistema não suportado para instalação automática de fontes")
         return
 
-    # Copia a fonte para o diretório apropriado
-    shutil.copy(font_path, fonts_dir)
-    print(f"Fonte instalada em {fonts_dir}")
-
-# Executar a instalação
-install_font()
+    
+    if not os.path.exists(os.path.join(fonts_dir, 'BebasNeue-Regular.ttf')):
+        shutil.copy(font_path, fonts_dir)
+        print(f"Fonte instalada em {fonts_dir}")
+    else:
+        print("Fonte já está instalada.")
