@@ -1,8 +1,8 @@
 import customtkinter as ctk
 from PIL import Image
 import os
-from functions.yt import baixar_video
-from assets.fonts.installfont import install_font
+from src.functions.yt import baixar_video
+from src.assets.fonts.installfont import install_font
 
 
 def setup_ui(frame, app):

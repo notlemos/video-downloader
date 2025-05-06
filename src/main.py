@@ -1,5 +1,5 @@
-from app import _app, _frame
-from widgets import setup_ui
+from src.app import _app, _frame
+from src.widgets import setup_ui
 from PIL import Image, ImageTk
 def main():
     app = _app()
