@@ -27,7 +27,7 @@ def install_font():
         return
 
     
-    if not os.path.exists(os.path.join(fonts_dir, 'BebasNeue-Regular.ttf')):
+    if not os.path.exists(os.path.join(fonts_dir, 'BebasNeue-Regular.otf')):
         shutil.copy(font_path, fonts_dir)
         print(f"Fonte instalada em {fonts_dir}")
     else:
