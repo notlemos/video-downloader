@@ -5,6 +5,6 @@
 ____
 
 #  About
-- An application to download videos from YouTube, with a user-friendly interface, allowing you to choose the quality you want to download.
+
 
 
