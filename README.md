@@ -4,7 +4,31 @@
 
 ____
 
-#  About
+#   Features
 
+- Download youtube videos in 1080p, 720p or 480p.
+# Starting
+## Prerequisites
 
-
+- [ffmpeg](https://www.ffmpeg.org/)
+# Installing 
+1. Clone the bot repositore using git.
+```bash
+git clone https://github.com/notlemos/yt-downloader.git
+```
+2. Go to the directory.
+```bash
+cd yt-downloader
+```
+3. Create a Virtual Enviroment.
+```
+python -m venv venv
+```
+4. Start the virtual Enviroment.
+```
+linux: source venv/bin/activate
+windows: venv\Scripts\activate
+```
+# References
+- [pytubefix](https://pytubefix.readthedocs.io/en/latest/) - Python Library for download youtube videos.
+- [Pillow](https://pillow.readthedocs.io/en/stable/): Python Imaging Library
