@@ -7,7 +7,7 @@ def main():
 
     setup_ui(frame, app)
 
-    img = Image.open("src/assets/imgs/youtube.png")
+    img = Image.open("src/imgs/youtube.png")
     photo = ImageTk.PhotoImage(img)
     app.wm_iconphoto(True, photo)
 

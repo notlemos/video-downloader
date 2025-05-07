@@ -1,4 +1,4 @@
 pytubefix
 customtkinter
-tkinter
 pillow
+ffmpeg

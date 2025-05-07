@@ -7,7 +7,7 @@ from functions.yt import baixar_video
 
 def setup_ui(frame, app):
     
-    image = Image.open("src/assets/imgs/youtube.png")
+    image = Image.open("src/imgs/youtube.png")
     image_ctk = ctk.CTkImage(light_image=image, dark_image=image, size=(50,50))
     image_label = ctk.CTkLabel(frame, image=image_ctk, text="")
     image_label.place(x=280, y=35)
